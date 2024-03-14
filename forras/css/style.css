@@ -25,6 +25,10 @@
     text-shadow: 5px 5px 10px black;
 }
 
+.row {
+    padding: 25px 0;
+}
+
 h2 {
     font-family: "Marhey", sans-serif;
     color: var(--lightblue) !important;
@@ -77,6 +81,70 @@ table td:first-child {
 
 .nav-link.active {
     background-color: rgba(255, 255, 255, 0.2);
+}
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+}
+#galeria img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(60%);
+    transition: 1s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#galeria img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.04);
+}
+
+#galeria img:nth-of-type(1) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+#galeria img:nth-of-type(2) {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+#galeria img:nth-of-type(3) {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+}
+#galeria img:nth-of-type(4) {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+#galeria img:nth-of-type(5) {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+#galeria img:nth-of-type(6) {
+    grid-column-start: 4;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+#footer p {
+    font-family: "Marhey", sans-serif;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 10px black;
 }
 
 @media (max-width: 992px) {
