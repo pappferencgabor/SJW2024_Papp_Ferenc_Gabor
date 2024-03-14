@@ -32,6 +32,45 @@ h2 {
     text-decoration: underline wavy;
 }
 
+table {
+    width: 80%;
+    margin: auto;
+    box-shadow: 1px 1px 10px var(--darkblue);
+}
+table thead tr:nth-child(1) { background-color: var(--lightblue); }
+table thead tr:nth-child(2) { background-color: var(--darkblue); }
+table thead { 
+    color: var(--white);
+    text-align: center;
+    font-family: "Marhey", sans-serif;
+}
+table tbody th {
+    color: var(--darkblue);
+    font-variant: small-caps;
+    font-weight: bold;
+}
+table td, table th {
+    background-color: rgba(18, 132, 185, 0.1);
+    padding: 10px;
+}
+table tr {
+    border-bottom: 1px solid var(--darkblue);
+}
+table tr:last-child {
+    border-bottom: none;
+}
+table tr:hover {
+    background-color: rgba(18, 132, 185, 0.7);
+}
+table th:first-child,
+table td:first-child {
+    width: 25%;
+}
+
+#velencei, #hevizi {
+    box-shadow: 1px 1px 3px var(--darkblue);
+}
+
 .navbar {
     background-color: var(--darkblue);
 }
