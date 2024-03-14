@@ -139,7 +139,7 @@ table td:first-child {
     grid-row-end: 1;
 }
 
-#footer p {
+footer p {
     font-family: "Marhey", sans-serif;
     font-size: 1.5em;
     text-transform: uppercase;
